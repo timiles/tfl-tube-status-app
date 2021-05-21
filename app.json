@@ -1,0 +1,12 @@
+{
+  "name": "tfl-tube-status-app",
+  "displayName": "tfl-tube-status-app",
+  "expo": {
+    "name": "tfl-tube-status-app",
+    "slug": "tfl-tube-status-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
