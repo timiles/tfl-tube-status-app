@@ -15,6 +15,10 @@ To run the app in a web browser, run `expo web`, then click "Run in web browser"
 
 I haven't yet tested this app with Android or iOS devices or emulators.
 
+## Tests
+
+To run the tests, use `npm test`.
+
 ## Comments
 
 - This app uses `babel-plugin-inline-dotenv` to set the app ID and API key. This is fine for a demo app, but you shouldn't store secrets in environment variables - [see this doc for more info](https://docs.expo.io/build-reference/variables/).
