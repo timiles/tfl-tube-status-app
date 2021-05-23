@@ -26,3 +26,5 @@ To run the tests, use `npm test`.
 - I used a simple `useFetch` hook to query the API - in an app with more functionality, I'd think about choosing a data management client library based on considerations such as API architecture, client-side caching requirements, etc.
 
 - Credit for [hex colours of the tube lines](https://github.com/rourkie/tflcss/blob/master/tfl.css).
+
+- Responsiveness: the Line Statuses list view will use one column on a portrait mobile device, and two columns when the viewport width is greater than 480px.

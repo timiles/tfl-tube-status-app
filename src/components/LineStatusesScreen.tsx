@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicator, ListRenderItem, Text, View } from 'react-native';
+import { ActivityIndicator, ListRenderItem, Text, useWindowDimensions, View } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
 import useGetLineStatuses, { ILineStatus } from '../data-hooks/useGetLineStatuses';
 import getColorForLine from '../utils/getColorForLine';
@@ -7,6 +7,8 @@ import LineStatusDisplay from './LineStatusDisplay';
 
 export default function LineStatusesScreen() {
   const { loading, error, data } = useGetLineStatuses();
+  const { width } = useWindowDimensions();
+  const numberOfColumns = width < 481 ? 1 : 2;
 
   const renderLineStatusItem: ListRenderItem<ILineStatus> = ({ item }) => (
     <LineStatusDisplay
@@ -24,6 +26,9 @@ export default function LineStatusesScreen() {
       {error && <Text>{error}</Text>}
       {data && (
         <FlatList
+          // Force component to be re-rendered when number of columns changes
+          key={numberOfColumns}
+          numColumns={numberOfColumns}
           data={data}
           renderItem={renderLineStatusItem}
         />
