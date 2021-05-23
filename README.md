@@ -11,6 +11,8 @@ APP_ID=your_tfl_app_id
 APP_KEY=your_tfl_app_key
 ```
 
+Ensure you have installed all package dependencies by running `npm i`.
+
 To run the app in a web browser, run `expo web`, then click "Run in web browser" from the Metro Bundler menu. In a Chromium-based browser, you can hit F12 and choose to emulate a device's viewport dimensions.
 
 I haven't yet tested this app with Android or iOS devices or emulators.
