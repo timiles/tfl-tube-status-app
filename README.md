@@ -19,7 +19,7 @@ I haven't yet tested this app with Android or iOS devices or emulators.
 
 ## Tests
 
-To run the tests, use `npm test`.
+To run the tests, use `npm test`. It may be a bit slower to set up jest for the first test run, but subsequent runs should be ok.
 
 ## Comments
 
